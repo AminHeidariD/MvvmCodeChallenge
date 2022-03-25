@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostCollectionViewCell" id="POR-Kb-tW5" customClass="PostCollectionViewCell" customModule="CoyoAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qCA-S2-sYw">
+                <rect key="frame" x="0.0" y="0.0" width="176" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c95-Cs-7go">
+                        <rect key="frame" x="0.0" y="0.0" width="176" height="159.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-np-wCT">
+                                <rect key="frame" x="0.0" y="0.0" width="176" height="159.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb1-na-QT2">
+                        <rect key="frame" x="0.0" y="159.5" width="176" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="GpO-ly-rHd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c95-Cs-7go" firstAttribute="top" secondItem="qCA-S2-sYw" secondAttribute="top" id="B9l-gp-ApJ"/>
+                    <constraint firstAttribute="trailing" secondItem="c95-Cs-7go" secondAttribute="trailing" id="CAc-7U-ggG"/>
+                    <constraint firstAttribute="bottom" secondItem="Xb1-na-QT2" secondAttribute="bottom" id="YcT-FE-Zu9"/>
+                    <constraint firstAttribute="trailing" secondItem="Xb1-na-QT2" secondAttribute="trailing" id="e39-DW-NdD"/>
+                    <constraint firstItem="c95-Cs-7go" firstAttribute="leading" secondItem="qCA-S2-sYw" secondAttribute="leading" id="i9F-cP-ESg"/>
+                    <constraint firstItem="Xb1-na-QT2" firstAttribute="leading" secondItem="qCA-S2-sYw" secondAttribute="leading" id="nho-NG-i79"/>
+                    <constraint firstItem="Xb1-na-QT2" firstAttribute="top" secondItem="c95-Cs-7go" secondAttribute="bottom" id="zzW-6s-nro"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="176" height="160"/>
+            <connections>
+                <outlet property="titleLabel" destination="gwl-np-wCT" id="hOt-Nd-CuC"/>
+            </connections>
+            <point key="canvasLocation" x="81.159420289855078" y="106.47321428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
